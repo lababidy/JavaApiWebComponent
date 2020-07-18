@@ -1,0 +1,118 @@
+@import "../fonts/font-awesome-4.7.0/css/font-awesome.min.css";
+@import "el.css";
+@import "nav.css";
+
+/*.nav{display: flex;}*/
+.main-app{display: flex;}
+.left-aria{ flex: 20% 1 1;}
+.right-aria{flex: 20% 1 1;}
+.router{flex: 60% 3 3;}
+/*.footer{display: flex;}*/
+.app{
+	/*	max-width: 60%;*/
+	/*		max-width: 1100px;*/
+	/*	min-width: 100vmin;*/
+	/*	margin-right:  20%;*/
+	/*	margin: 0 auto;*/
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items:stretch;
+	/* for multi row*/
+	align-content :stretch;
+}
+
+* ,*::after, *::before{
+    box-sizing: inherit;
+	margin: inherit;
+
+
+}
+.container-two-space{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*	align-items:flex-start;*/
+	/*flex: auto;*/
+	margin: 1px;
+}
+
+.container-one{
+	display: flex;
+	/*	 grid-template-columns:minmax(0,100%);
+		grid-gap: .5rem; */
+	flex-direction: column;
+	justify-content: space-between;
+	/*	flex: 100% 1 1;*/
+
+	/*		align-items:  stretch;*/
+}
+
+
+.success {border-color:#4CAF50;;color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {border-color:#2196F3;;color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {border-color:#ff9800;color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {border-color:#f44336;;color: #f44336;} /* Red */
+.danger:hover {background: #da190b;}
+
+.default {border-color:black;color: black;} /* Gray */
+.default:hover {background: black;}
+
+@media (max-width: 1100px) {
+	.left-aria{ flex: 10% 1 1;}
+	.right-aria{flex: 10% 1 1;}
+	.router{flex: 80% 4 4;}
+}
+@media (max-width: 700px) {
+	.left-aria{ display: none;}
+	.right-aria{display: none;}
+	.router{flex: 100% 5 5;}
+}
+.input__search {
+	background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm6.321-1.096l5.386 5.39a1 1 0 1 1-1.414 1.413l-5.386-5.388a8 8 0 1 1 1.414-1.415z' fill='red' fill-rule='nonzero'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	padding: 0px 40px;
+}
+.input__search2 {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='gray' d='M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 10px 10px;
+	padding: 10px 40px;
+}
+.input__search3 {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='%234CAF50' d='M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-size: 15px 20px;
+	padding: 0px 20px;
+}
+
+
+.input__search {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 22a6 6 0 1 0 0-12 6 6 0 0 0 0 12zm6.321-1.096l5.386 5.39a1 1 0 1 1-1.414 1.413l-5.386-5.388a8 8 0 1 1 1.414-1.415z' fill='red' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  padding: 10px 40px;
+/*  //background-size: 40px;*/
+}
+.input__search2 {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z' fill='red' fill-rule='nonzero'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  padding: 10px 40px;
+  height: 10px;
+  width: 10px;
+/*  //background-size: 40px;*/
+}
+
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+
+p.ex1 {direction: rtl;unicode-bidi: bidi-override;}
+

@@ -1,0 +1,315 @@
+:root {
+  --valid-color: #2ecc71;
+  --error-color: #e74c3c;
+  --green-v:#4CAF50;
+  --blue-v:#2196F3;
+  --red-v:#f44336;
+  
+  
+  }
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+     box-sizing: border-box;
+     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+     font-size: 18px;
+     border-radius: 4px;
+     direction:ltr;
+     unicode-bidi: plaintext;
+
+
+    }
+    * ,*::after, *::before{
+    box-sizing: inherit;
+    border-radius:inherit;
+    margin: inherit;
+    unicode-bidi:inherit;
+	margin: 0;
+	padding: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    li {
+      display: inline;
+    }
+    ul{
+      list-style-type: none;
+    } 
+    input, select, textarea {
+		height:40px;
+		padding: 0rem 0rem;
+      border:0;
+      border:1px solid black ;
+	  width:100%;
+      text-indent: 10px;
+	  /*      padding-top:20px;*/
+      border-radius: 4px;
+    
+    }
+    button{
+      display: inline-block;
+      font-weight: 300;
+	  color: #212529;
+      text-align: center;
+      vertical-align: middle;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+      -ms-user-select: none;
+				  user-select: none;
+				  background-color: transparent;
+				  border: 1px solid #212529;
+      font-size: 1rem;
+      border-radius: 0.25rem;
+	  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      border: .07rem solid #212529;
+	  /*      padding: .4rem .8rem;*/
+	  height:40px;
+	  box-shadow: 2px 2px 2px gray;
+
+    }
+    
+    button:hover{
+      background-color: #212529;
+      color: #ffffff;
+      text-decoration: none;
+      outline: 0;
+    }
+	button:active {
+		box-shadow: 0 0 0px gray;
+		transform: translateY(2px);
+	}
+
+    form > div {
+    
+      position: relative;
+    
+    }
+    form > div:hover label{
+		/*color:transparent;*/
+		font-weight:600;
+    }
+    form > div:hover input{
+		border:1px solid var(--blue-v) ;
+		border-bottom: 2px solid var(--blue-v) ;
+    }
+    form > div > input{
+      font-size:1rem;
+    }
+	small {
+        color: var(--red-v);
+        position: relative;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+    }
+    form > div > label{
+      display:block;
+      padding:0;
+	  position: relative;
+
+	  /*      position: absolute;*/
+      color:gray;
+	  /*      height:40px;*/
+	  /*      height:100%;
+			width:100%;*/
+      pointer-events:none;
+    
+    }
+    
+    
+
+    form > div.valid > input {
+      border-color: var(--green-v);
+    }
+    
+    form > div.error > input {
+      border-color: var(--red-v);
+    }
+    
+    
+    form > div.error >  small {
+      visibility: visible;
+    }
+
+	table {
+		font-family: 'Open Sans', sans-serif;
+		width: 750px;
+		border-collapse: collapse;
+		border: 3px solid #44475C;
+		margin: 10px 10px 0 10px;
+	}
+
+	table th {
+		text-transform: uppercase;
+		text-align: left;
+		background: #44475C;
+		color: #FFF;
+		cursor: pointer;
+		padding: 8px;
+		min-width: 30px;
+	}
+	table th:hover {
+        background: #717699;
+	}
+	table td {
+		text-align: left;
+		padding: 8px;
+		border-right: 2px solid #7D82A8;
+	}
+	table td:last-child {
+		border-right: none;
+	}
+	table tbody tr:nth-child(2n) td {
+		background: #D4D8F9;
+	}
+
+	/* html,
+body {
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box;
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-size: 18px;
+ border-radius: 4px;
+
+}
+* {
+  border-radius:inherit; 
+  box-sizing: inherit;
+
+}
+input, select, textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+input:focus {
+  border: 3px solid #555;
+}
+input:hover {
+  background-color: #ffffff;
+}
+a{
+  text-decoration: none;
+}
+li {
+  display: inline;
+}
+ul{
+  list-style-type: none;
+}
+button{
+  display: inline-block;
+  font-weight: 300;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid #212529;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+   border: .16rem solid #212529;
+   padding: .4rem .8rem; 
+}
+button:hover{
+  background-color: #212529;
+  color: #ffffff;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem #6c757d;
+} */
+
+/*@media screen and (max-width: 600px) {
+   input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}*/
+
+/* default css
+html, address,
+blockquote,
+body, dd, div,
+dl, dt, fieldset, form,
+frame, frameset,
+h1, h2, h3, h4,
+h5, h6, noframes,
+ol, p, ul, center,
+dir, hr, menu, pre   { display: block; unicode-bidi: embed }
+li              { display: list-item }
+head            { display: none }
+table           { display: table }
+tr              { display: table-row }
+thead           { display: table-header-group }
+tbody           { display: table-row-group }
+tfoot           { display: table-footer-group }
+col             { display: table-column }
+colgroup        { display: table-column-group }
+td, th          { display: table-cell }
+caption         { display: table-caption }
+th              { font-weight: bolder; text-align: center }
+caption         { text-align: center }
+body            { margin: 8px }
+h1              { font-size: 2em; margin: .67em 0 }
+h2              { font-size: 1.5em; margin: .75em 0 }
+h3              { font-size: 1.17em; margin: .83em 0 }
+h4, p,
+blockquote, ul,
+fieldset, form,
+ol, dl, dir,
+menu            { margin: 1.12em 0 }
+h5              { font-size: .83em; margin: 1.5em 0 }
+h6              { font-size: .75em; margin: 1.67em 0 }
+h1, h2, h3, h4,
+h5, h6, b,
+strong          { font-weight: bolder }
+blockquote      { margin-left: 40px; margin-right: 40px }
+i, cite, em,
+var, address    { font-style: italic }
+pre, tt, code,
+kbd, samp       { font-family: monospace }
+pre             { white-space: pre }
+button, textarea,
+input, select   { display: inline-block }
+big             { font-size: 1.17em }
+small, sub, sup { font-size: .83em }
+sub             { vertical-align: sub }
+sup             { vertical-align: super }
+table           { border-spacing: 2px; }
+thead, tbody,
+tfoot           { vertical-align: middle }
+td, th, tr      { vertical-align: inherit }
+s, strike, del  { text-decoration: line-through }
+hr              { border: 1px inset }
+ol, ul, dir,
+menu, dd        { margin-left: 40px }
+ol              { list-style-type: decimal }
+ol ul, ul ol,
+ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
+u, ins          { text-decoration: underline }
+br:before       { content: "\A"; white-space: pre-line }
+center          { text-align: center }
+:link, :visited { text-decoration: underline }
+:focus          { outline: thin dotted invert }
+
+ Begin bidirectionality settings (do not change) 
+BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
+BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
+
+*[DIR="ltr"]    { direction: ltr; unicode-bidi: embed }
+*[DIR="rtl"]    { direction: rtl; unicode-bidi: embed }
+
+@media print {
+  h1            { page-break-before: always }
+  h1, h2, h3,
+  h4, h5, h6    { page-break-after: avoid }
+  ul, ol, dl    { page-break-before: avoid }
+} */
